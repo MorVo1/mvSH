@@ -11,4 +11,4 @@ python3 main.py <profile (int)>
 - `.u` means user, `.h` means host, `.d` means directory.
 
 Congratulations! You've now become a MVShell user!
-I was inspired by: @jedrek_0429
+I was inspired by: @jedrek_0429 and @klapouch
