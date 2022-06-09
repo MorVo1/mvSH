@@ -8,7 +8,7 @@ config = json.load(open('..\config.json'))
 parser = _parser.Parser()
 constants = {
     'sh_name': 'MVShell',
-    'version': '0.0.1'
+    'version': '0.1.0'
 }
 
 current_profile = 0
