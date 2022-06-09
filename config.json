@@ -1,0 +1,8 @@
+{
+    "profiles" : [
+        {
+            "name" : "default",
+            "prompt": "\u001b[31m> \u001b[0m"
+        }
+    ]
+}
