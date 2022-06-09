@@ -5,6 +5,6 @@ def execute(command, args):
         case 'exit':
             sys.exit()
         case 'echo':
-            print(''.join(args))
+            print(' '.join(args))
         case _:
             print('Command not found')

@@ -1,8 +1,9 @@
 {
     "profiles" : [
         {
-            "name" : "default",
-            "prompt": "\u001b[31m> \u001b[0m"
+            "user_name" : "MorVo",
+            "host_name" : "pc",
+            "prompt": "\u001b[35m.u\u001b[0m@\u001b[32m.h\u001b[93m\n> \u001b[0m"
         }
     ]
 }
