@@ -3,12 +3,12 @@
         {
             "user_name" : "default",
             "host_name" : "pc",
-            "prompt": "\u001b[35m.u\u001b[0m@\u001b[32m.h\u001b[93m\n> \u001b[0m"
+            "prompt": "\u001b[35m.u\u001b[0m@\u001b[32m.h\u001b[0m ~ .d\u001b[93m\n$ \u001b[0m"
         },
         {
             "user_name" : "MorVo",
             "host_name" : "pc",
-            "prompt": "\u001b[35m.u\u001b[0m@\u001b[32m.h\u001b[93m\n> \u001b[0m"
+            "prompt": "\u001b[35m.u\u001b[0m@\u001b[32m.h\u001b[0m ~ .d\u001b[93m\n$ \u001b[0m"
         }
     ]
 }

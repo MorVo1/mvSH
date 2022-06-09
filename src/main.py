@@ -2,6 +2,7 @@ import parser as _parser
 import sys
 import json
 import execute
+import os
 
 config = json.load(open('..\config.json'))
 parser = _parser.Parser()
@@ -19,11 +20,16 @@ else:
     current_profile = int(sys.argv[1])
 
 def prompt_formater(prompt:str):
-    return prompt.replace('.u', config['profiles'][current_profile]['user_name']).replace('.h', config['profiles'][current_profile]['host_name'])
+    return prompt.replace('.u', config['profiles'][current_profile]['user_name'])\
+    .replace('.h', config['profiles'][current_profile]['host_name'])\
+    .replace('.d', os.getcwd())
 
 vars = {
     'prompt': prompt_formater(config['profiles'][current_profile]['prompt'])
 }
+
+def update_prompt():
+    vars['prompt'] = prompt_formater(config['profiles'][current_profile]['prompt'])
 
 def main():
     while True:
@@ -31,6 +37,7 @@ def main():
         cmd = parser.parse(raw)[0]
         args = parser.parse(raw)[1]
         execute.execute(cmd, args)
+        update_prompt()
 
 if __name__ == '__main__':
     main()
