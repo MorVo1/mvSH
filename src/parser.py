@@ -1,4 +1,3 @@
-from curses import raw
 import shlex
 
 class Parser:
